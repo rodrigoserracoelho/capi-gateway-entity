@@ -11,6 +11,7 @@ public class Api {
     private String name;
     private boolean secured;
     private String context;
+    private String jwsEndpoint;
     private List<Path> paths;
 
 

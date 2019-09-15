@@ -7,4 +7,5 @@ public class Path {
     private Verb verb;
     private String path;
     private boolean blockIfInError;
+    private int maxAllowedFailedCalls;
 }

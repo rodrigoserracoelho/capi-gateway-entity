@@ -17,6 +17,8 @@ public class Api {
     private String context;
     private String jwsEndpoint;
     private List<Path> paths;
+    private boolean swagger;
+    private String swaggerEndpoint;
 
 
 }

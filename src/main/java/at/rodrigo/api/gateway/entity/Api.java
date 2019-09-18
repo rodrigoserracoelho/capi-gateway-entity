@@ -11,6 +11,7 @@ public class Api {
     @Id
     private String id;
     private String endpoint;
+    private EndpointType endpointType;
     private String name;
     private boolean secured;
     private String context;

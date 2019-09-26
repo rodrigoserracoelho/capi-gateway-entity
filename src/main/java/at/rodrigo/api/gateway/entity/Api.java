@@ -19,6 +19,7 @@ public class Api {
     private List<Path> paths;
     private boolean swagger;
     private String swaggerEndpoint;
+    private List<String> audience;
 
 
 }

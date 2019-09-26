@@ -8,8 +8,9 @@ import java.io.Serializable;
 public class RunningApi implements Serializable {
 
     private String id;
-    private String directRouteId;
-    private String restRouteId;
+    private String routeId;
+    private String zipkinServiceName;
+    private String prometheusMetricName;
     private int failedCalls;
     private int maxAllowedFailedCalls;
     private boolean disabled;

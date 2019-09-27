@@ -2,26 +2,25 @@ package at.rodrigo.api.gateway.grafana.entity;
 
 import lombok.Data;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 @Data
 public class Dashboard {
 
-    //private Annotations annotations;
+    private Annotations annotations;
     private String description;
     private Boolean editable;
     private Integer gnetId;
     private Integer graphTooltip;
     private Integer id;
     private Long iteration;
-    private List<Object> links = null;
-    private List<Panel> panels = null;
+    private List<Object> links = new ArrayList<Object>();
+    private List<Panel> panels = new ArrayList<Panel>();
     private String refresh;
     private Integer schemaVersion;
     private String style;
-    private List<Object> tags = null;
+    private List<Object> tags = new ArrayList<Object>();
     private Templating templating;
     private Time time;
     private Timepicker timepicker;
@@ -29,8 +28,5 @@ public class Dashboard {
     private String title;
     private String uid;
     private Integer version;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-
-
 
 }

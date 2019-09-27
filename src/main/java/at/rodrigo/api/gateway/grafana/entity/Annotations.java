@@ -6,9 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class Templating {
+public class Annotations {
 
-    private List<List_> list = new ArrayList<List_>();
-
+    private List<Annotation> list = new ArrayList<Annotation>();
 
 }

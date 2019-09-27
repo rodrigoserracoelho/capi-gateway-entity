@@ -2,9 +2,7 @@ package at.rodrigo.api.gateway.grafana.entity;
 
 import lombok.Data;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Data
 public class List_ {
@@ -29,5 +27,4 @@ public class List_ {
     private String tagsQuery;
     private String type;
     private Boolean useTags;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 }

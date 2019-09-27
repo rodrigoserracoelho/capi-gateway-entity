@@ -2,9 +2,6 @@ package at.rodrigo.api.gateway.grafana.entity;
 
 import lombok.Data;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @Data
 public class Meta {
 
@@ -28,6 +25,5 @@ public class Meta {
     private String folderUrl;
     private Boolean provisioned;
     private String provisionedExternalId;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
 }

@@ -8,4 +8,5 @@ public class Path {
     private String path;
     private boolean blockIfInError;
     private int maxAllowedFailedCalls;
+    private String routeID;
 }

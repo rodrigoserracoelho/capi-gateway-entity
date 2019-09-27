@@ -1,17 +1,18 @@
 package at.rodrigo.api.gateway.grafana.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 @Data
 public class Timepicker {
 
     private Boolean now;
-    private List<String> refreshIntervals = null;
-    private List<String> timeOptions = null;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    @JsonProperty("refresh_intervals")
+    private List<String> refreshIntervals = new ArrayList<String>();
+    @JsonProperty("time_options")
+    private List<String> timeOptions = new ArrayList<String>();
 
 }

@@ -2,9 +2,8 @@ package at.rodrigo.api.gateway.grafana.entity;
 
 import lombok.Data;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 @Data
 public class Panel {
@@ -12,7 +11,7 @@ public class Panel {
     private Object cacheTimeout;
     private Boolean colorBackground;
     private Boolean colorValue;
-    private List<String> colors = null;
+    private List<String> colors = new ArrayList<String>();
     private String datasource;
     private Integer decimals;
     private Boolean editable;
@@ -23,9 +22,9 @@ public class Panel {
     private String height;
     private Integer id;
     private Object interval;
-    private List<Object> links = null;
+    private List<Object> links = new ArrayList<Object>();
     private Integer mappingType;
-    private List<MappingType> mappingTypes = null;
+    private List<MappingType> mappingTypes = new ArrayList<MappingType>();
     private Integer maxDataPoints;
     private String nullPointMode;
     private Object nullText;
@@ -34,16 +33,18 @@ public class Panel {
     private String postfixFontSize;
     private String prefix;
     private String prefixFontSize;
-    private List<RangeMap> rangeMaps = null;
+    private List<RangeMap> rangeMaps = new ArrayList<RangeMap>();
     private Sparkline sparkline;
     private String tableColumn;
-    private List<Target> targets = null;
+    private List<Target> targets = new ArrayList<Target>();
     private Object thresholds;
     private String title;
     private String type;
     private String valueFontSize;
-    private List<ValueMap> valueMaps = null;
+    private List<ValueMap> valueMaps = new ArrayList<ValueMap>();
     private String valueName;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private boolean collapsed;
+    private String repeat;
+    private List<String> panels = new ArrayList<String>();
 
 }

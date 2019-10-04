@@ -1,5 +1,7 @@
 package at.rodrigo.api.gateway.entity;
 
-public enum EndpointType {
+import java.io.Serializable;
+
+public enum EndpointType implements Serializable {
     HTTP, HTTPS
 }

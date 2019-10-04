@@ -1,5 +1,7 @@
 package at.rodrigo.api.gateway.entity;
 
-public enum Verb {
+import java.io.Serializable;
+
+public enum Verb implements Serializable {
     POST, GET, DELETE, PUT
 }

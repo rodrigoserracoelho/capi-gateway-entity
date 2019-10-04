@@ -2,11 +2,11 @@ package at.rodrigo.api.gateway.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class Path {
+public class Path implements Serializable {
     private Verb verb;
     private String path;
-    private boolean blockIfInError;
-    private int maxAllowedFailedCalls;
     private String routeID;
 }

@@ -28,4 +28,6 @@ public class RunningApi implements Serializable {
     private int countBlockChecks;
     private boolean blockIfInError;
     private boolean secured;
+    private SuspensionType suspensionType;
+
 }

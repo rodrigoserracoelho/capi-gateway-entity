@@ -25,5 +25,6 @@ public class Api implements Serializable {
     private int maxAllowedFailedCalls;
     private boolean unblockAfter;
     private int unblockAfterMinutes;
+    private ThrottlingPolicy throttlingPolicy;
 
 }

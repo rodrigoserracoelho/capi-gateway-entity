@@ -29,5 +29,6 @@ public class RunningApi implements Serializable {
     private boolean blockIfInError;
     private boolean secured;
     private SuspensionType suspensionType;
+    private String suspensionMessage;
 
 }

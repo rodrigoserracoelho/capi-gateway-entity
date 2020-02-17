@@ -8,7 +8,6 @@ import java.util.List;
 
 @Data
 public class Api implements Serializable {
-
     @Id
     private String id;
     private String endpoint;
@@ -26,5 +25,4 @@ public class Api implements Serializable {
     private boolean unblockAfter;
     private int unblockAfterMinutes;
     private ThrottlingPolicy throttlingPolicy;
-
 }

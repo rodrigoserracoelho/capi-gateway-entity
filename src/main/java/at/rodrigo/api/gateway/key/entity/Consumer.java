@@ -9,7 +9,6 @@ import java.util.List;
 
 @Data
 public class Consumer {
-
     @Id
     private String clientId;
     @Transient

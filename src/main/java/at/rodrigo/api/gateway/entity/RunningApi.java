@@ -7,7 +7,6 @@ import java.util.List;
 
 @Data
 public class RunningApi implements Serializable {
-
     private String id;
     private String context;
     private String path;
@@ -30,5 +29,4 @@ public class RunningApi implements Serializable {
     private boolean secured;
     private SuspensionType suspensionType;
     private String suspensionMessage;
-
 }

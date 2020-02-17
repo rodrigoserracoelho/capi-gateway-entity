@@ -7,7 +7,6 @@ import java.util.List;
 
 @Data
 public class Subscription {
-
     @Id
     private String subscriptionId;
     private List<String> routeList;

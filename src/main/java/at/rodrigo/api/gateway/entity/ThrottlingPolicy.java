@@ -9,7 +9,6 @@ import java.util.List;
 
 @Data
 public class ThrottlingPolicy implements Serializable {
-
     private int maxCallsAllowed;
     private int periodForMaxCalls;
     private int startCountingAt;

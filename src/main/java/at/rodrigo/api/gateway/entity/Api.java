@@ -10,8 +10,10 @@ import java.util.List;
 public class Api implements Serializable {
     @Id
     private String id;
-    private String endpoint;
+    private List<String> endpoints;
     private EndpointType endpointType;
+    private int connectTimeout;
+    private int socketTimeout;
     private String name;
     private boolean secured;
     private String context;
@@ -22,6 +24,10 @@ public class Api implements Serializable {
     private List<String> audience;
     private boolean blockIfInError;
     private int maxAllowedFailedCalls;
+    private boolean zipkinTraceIdVisible;
+    private boolean internalExceptionMessageVisible;
+    private boolean internalExceptionVisible;
+    private boolean returnAPIError;
     private boolean unblockAfter;
     private int unblockAfterMinutes;
     private ThrottlingPolicy throttlingPolicy;

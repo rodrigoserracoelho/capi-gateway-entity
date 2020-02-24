@@ -10,7 +10,7 @@ public class RunningApi implements Serializable {
     private String id;
     private String context;
     private String path;
-    private String endpoint;
+    private List<String> endpoints;
     private EndpointType endpointType;
     private Verb verb;
     private String jwsEndpoint;
@@ -29,4 +29,9 @@ public class RunningApi implements Serializable {
     private boolean secured;
     private SuspensionType suspensionType;
     private String suspensionMessage;
+    private boolean zipkinTraceIdVisible;
+    private boolean internalExceptionMessageVisible;
+    private boolean internalExceptionVisible;
+    private int connectTimeout;
+    private int socketTimeout;
 }

@@ -34,7 +34,7 @@ jobs:
         username: rodrigoserracoelho
         password: "$sonatype_secret"
         format: maven2
-        repository: Releases
+        repository: maven-releases
         coordinates: groupId=at.rodrigo.api.gateway artifactId=api-gateway-entity version=1.0
         assets: extension=jar
         filename: ./target/api-gateway-entity-1.0.jar

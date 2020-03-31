@@ -30,7 +30,7 @@ jobs:
         sonatype_secret: ${{secrets.sonatype_secret}} 
       uses: sonatype-nexus-community/nexus-repo-github-action@master
       with:
-        serverUrl: https://oss.sonatype.org
+        serverUrl: https://oss.sonatype.org/service/local/staging/deploy
         username: rodrigoserracoelho
         password: "$sonatype_secret"
         format: maven2

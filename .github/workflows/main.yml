@@ -32,7 +32,7 @@ jobs:
         username: rodrigoserracoelho
         password: ${{secrets.sonatype_secret}}
         format: maven2
-        repository: Releases
+        repository: RC
         coordinates: groupId=at.rodrigo.api.gateway artifactId=api-gateway-entity version=1.0
         assets: extension=jar
         filename: ./target/api-gateway-entity-1.0.jar

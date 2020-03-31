@@ -28,11 +28,11 @@ jobs:
     - name: Nexus Repo Publish
       uses: sonatype-nexus-community/nexus-repo-github-action@master
       with:
-        serverUrl: https://oss.sonatype.org/content/repositories/snapshots
+        serverUrl: https://oss.sonatype.org/service/local/staging/deploy/maven2
         username: rodrigoserracoelho
         password: ${{secrets.sonatype_secret}}
         format: maven2
-        repository: snapshots
+        repository: Releases
         coordinates: groupId=at.rodrigo.api.gateway artifactId=api-gateway-entity version=1.0
         assets: extension=jar
         filename: ./target/api-gateway-entity-1.0.jar

@@ -8,6 +8,7 @@ import java.util.List;
 
 @Data
 public class Api implements Serializable {
+
     @Id
     private String id;
     private List<String> endpoints;
@@ -36,3 +37,4 @@ public class Api implements Serializable {
     private List<String> allowedOrigins;
     private boolean credentialsAllowed;
 }
+

@@ -6,7 +6,7 @@
   <groupId>at.rodrigo.api.gateway</groupId>
   <artifactId>api-gateway-entity</artifactId>
   <packaging>jar</packaging>
-  <version>1.3.2</version>
+  <version>1.3.3-SNAPSHOT</version>
 
   <name>CAPI Gateway Entities</name>
 
@@ -46,7 +46,7 @@
     <connection>scm:git:git://github.com/rodrigoserracoelho/capi-gateway-entity.git</connection>
     <developerConnection>scm:git:git@github.com:rodrigoserracoelho/capi-gateway-entity.git</developerConnection>
     <url>https://github.com/rodrigoserracoelho/capi-gateway-entity</url>
-    <tag>1.3.2-SNAPSHOT</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <dependencies>

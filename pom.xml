@@ -43,9 +43,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:git://github.com/rodrigoserracoelho/capi-gateway-entity.git</connection>
-    <developerConnection>scm:git:git@github.com:rodrigoserracoelho/capi-gateway-entity.git</developerConnection>
-    <url>https://github.com/rodrigoserracoelho/capi-gateway-entity</url>
+    <connection>scm:git:https://github.com/rodrigoserracoelho/capi-gateway-entity.git</connection>
+    <developerConnection>scm:git:https://github.com/rodrigoserracoelho/capi-gateway-entity.git</developerConnection>
+    <url>https://github.com/rodrigoserracoelho/capi-gateway-entity.git</url>
   </scm>
 
   <dependencies>

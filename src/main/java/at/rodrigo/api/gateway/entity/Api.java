@@ -6,6 +6,9 @@ import org.springframework.data.annotation.Id;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * Represents an API, ready to be deployed
+ */
 @Data
 public class Api implements Serializable {
 

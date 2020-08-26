@@ -11,7 +11,6 @@ import java.util.List;
  */
 @Data
 public class Api implements Serializable {
-
     @Id
     private String id;
     private List<String> endpoints;

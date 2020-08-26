@@ -15,6 +15,9 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <lombok.version>1.18.2</lombok.version>
     <jackson.version>2.9.9</jackson.version>
+    <spring-boot-starter-data-mongodb.version>2.1.7.RELEASE</spring-boot-starter-data-mongodb.version>
+    <java.version>14</java.version>
+    <mave-plugin.version>3.8.1</mave-plugin.version>
   </properties>
 
   <description>
@@ -56,14 +59,21 @@
       <artifactId>jackson-annotations</artifactId>
       <version>${jackson.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-mongodb</artifactId>
+      <version>${spring-boot-starter-data-mongodb.version}</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
      <plugin>    
         <artifactId>maven-compiler-plugin</artifactId>
+       <version>${mave-plugin.version}</version>
         <configuration>
-            <source>14</source>
-            <target>14</target>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
         </configuration>
     </plugin>
     </plugins>

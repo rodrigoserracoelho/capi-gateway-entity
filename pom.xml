@@ -42,11 +42,11 @@
       </roles>
     </developer>
   </developers>
-  <scm>
+  <!--scm>
     <connection>scm:git:https://github.com/rodrigoserracoelho/capi-gateway-entity.git</connection>
     <developerConnection>scm:git:https://github.com/rodrigoserracoelho/capi-gateway-entity.git</developerConnection>
     <url>https://github.com/rodrigoserracoelho/capi-gateway-entity.git</url>
-  </scm>
+  </scm-->
 
   <dependencies>
     <dependency>
@@ -70,7 +70,7 @@
       <version>2.9.9</version>
     </dependency>
   </dependencies>
-  <build>
+  <!--build>
     <plugins>
 
       <plugin>
@@ -172,9 +172,9 @@
       </plugin>
 
     </plugins>
-  </build>
+  </build-->
 
-  <distributionManagement>
+  <!--distributionManagement>
     <snapshotRepository>
       <id>ossrh</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
@@ -183,5 +183,5 @@
       <id>ossrh</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
-  </distributionManagement>
+  </distributionManagement-->
 </project>

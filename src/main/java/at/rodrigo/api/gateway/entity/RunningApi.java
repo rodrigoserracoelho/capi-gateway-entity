@@ -27,6 +27,7 @@ public class RunningApi implements Serializable {
     private int countBlockChecks;
     private boolean blockIfInError;
     private boolean secured;
+    private boolean trafficInspectorEnabled;
     private SuspensionType suspensionType;
     private String suspensionMessage;
     private boolean zipkinTraceIdVisible;

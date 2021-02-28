@@ -19,7 +19,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Run action
-
     - uses: geirem/packages-helper@master
       with:
         repo_name: rodrigoserracoelho/capi-gateway-entity

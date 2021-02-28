@@ -82,7 +82,7 @@
     <repository>
       <id>github</id>
       <name>Github Repository CAPI</name>
-      <url>https://github.com/rodrigoserracoelho/capi-gateway-entity/packages</url>
+      <url>https://maven.pkg.github.com/rodrigoserracoelho/capi-gateway-entity/packages</url>
     </repository>
   </distributionManagement>
 </project>

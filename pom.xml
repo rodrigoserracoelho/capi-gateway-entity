@@ -78,4 +78,11 @@
     </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>Github Repository CAPI</name>
+      <url>https://maven.pkg.github.com/rodrigoserracoelho/capi-gateway-entity</url>
+    </repository>
+  </distributionManagement>
 </project>

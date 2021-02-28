@@ -16,40 +16,12 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up JDK 14
-      uses: actions/setup-java@v1
+    - uses: actions/checkout@master
+    - name: Run action
+
+    - uses: geirem/packages-helper@master
       with:
-        java-version: 14
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
-    - name: GitHub Shared Repo Upload Action
-      # You may pin to the exact commit or the version.
-      # uses: geirem/packages-helper@13e3c382d70530a0e504f84077fa794db3219718
-      uses: geirem/packages-helper@1.0.0
-      with:
-        # Local path of the shared repo to use (organization / repo).
-        repo_name: rodrigoserracoelho/capi-gateway-entity 
+        repo_name: rodrigoserracoelho/capi-gateway-entity
       env:
         GITHUB_PASSWORD: ${{ secrets.TOKEN }}
-    - name: Maven Release and Publish
-      # You may pin to the exact commit or the version.
-      # uses: mg-smartrent/github-actions-maven-release@5f387c0d77b22da293e9812d43ab90cdc49f475a
-      uses: mg-smartrent/github-actions-maven-release@v1.5
-      with:
-        # Maven server repository id to push the artefacts to
-        #maven-repo-server-id: rodrigoserracoelho 
-        # Maven server repository username
-        maven-repo-server-username: rodrigoserracoelho
-        # Maven server repository password
-        #maven-repo-server-password: 
-        # The git user name for commiting the release
-        git-release-bot-name: rodrigoserracoelho
-        # The git user email for commiting the release
-        git-release-bot-email: rodrigoserracoelho@gmail.com
-        # Github access token. https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
-        access-token: ${{ secrets.TOKEN }}
-        
-         

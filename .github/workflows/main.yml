@@ -26,5 +26,4 @@ jobs:
     - name: Publish package
       run: mvn -X --file pom.xml --batch-mode deploy
       env:
-          MAVEN_USERNAME: x-access-token
-          MAVEN_PASSWORD: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}

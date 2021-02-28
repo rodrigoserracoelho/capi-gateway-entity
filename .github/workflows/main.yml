@@ -25,6 +25,11 @@ jobs:
         java-version: 14
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - uses: geirem/packages-helper@master
+      with:
+        repo_name: rodrigoserracoelho/capi-gateway-entity
+      env:
+        GITHUB_PASSWORD: ${{ secrets.TOKEN }}  
     - name: Maven Release and Publish
       # You may pin to the exact commit or the version.
       # uses: mg-smartrent/github-actions-maven-release@5f387c0d77b22da293e9812d43ab90cdc49f475a

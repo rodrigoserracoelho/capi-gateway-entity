@@ -28,4 +28,4 @@ jobs:
       with:
         java-version: 14
     - name: Build with Maven
-      run: mvn -X -B deploy --file pom.xml -DaltDeploymentRepository=https://maven.pkg.github.com/rodrigoserracoelho/capi-gateway-entity
+      run: mvn -X -B deploy --file pom.xml -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/rodrigoserracoelho/capi-gateway-entity
